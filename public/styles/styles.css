@@ -1,0 +1,46 @@
+.app {
+  border: orange solid 4px;
+  display: grid;
+  grid-template-rows: repeat(5,20%);
+  grid-template-columns: repeat(8,12.5%);
+  grid-template-areas:'h h h h h h h h',
+                      'n n n n n n n n',
+                      'ss ss ss ss ss ss ss ss',
+                      'f f f f f f f f';
+}
+
+header,nav,section,article,footer,h1,h2 {
+  margin: 3px;
+  border-radius: 10px;
+}
+
+h1,h2 {
+  border: gray solid 4px;
+}
+
+header {
+  border: blue solid 4px;
+  grid-area: 'h';
+}
+
+nav {
+  border: blue solid 4px;
+  grid-area: 'n';
+}
+
+.section-wrapper {
+  grid-area: 'ss';
+}
+
+section {
+  border: green solid 4px;
+}
+
+article {
+  border: red solid 3px;
+}
+
+footer {
+  border: pink solid 3px;
+  grid-area: 5/1/6/9;
+}
